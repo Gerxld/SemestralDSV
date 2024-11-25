@@ -1,0 +1,297 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F6ECE3; /* Fondo principal */
+    color: #000000; /* Texto principal */
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #91766E; /* Marrón claro para el navbar */
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    gap: 1.5rem;
+}
+
+nav ul li {
+    margin: 0.5rem 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF; /* Blanco para los enlaces */
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #F6ECE3; /* Fondo suave al pasar el ratón */
+    background-color: #B7A7A9; /* Gris intermedio */
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #B7A7A9; /* Gris intermedio */
+    color: #FFFFFF; /* Texto en blanco */
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+/* Responsive Grid */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+main div {
+    background-color: #e6e6fa; /* Lavanda pastel */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+/* Carrusel */
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: 1.5rem auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-images img {
+    width: 100%;
+    flex-shrink: 0;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    animation: slide 10s infinite;
+}
+
+/* Introducción a servicios */
+.intro-services {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #F6ECE3; /* Fondo claro */
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #000000; /* Texto negro */
+}
+
+.intro-services h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #91766E; /* Marrón claro */
+}
+
+.intro-services p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #000000; /* Texto negro */
+    line-height: 1.6;
+}
+
+.service-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.service-buttons button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: #FFFFFF; /* Texto blanco */
+    background-color: #91766E; /* Marrón claro */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.service-buttons button:hover {
+    background-color: #B7A7A9; /* Gris intermedio */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background-color: #000000; /* Negro */
+    color: #FFFFFF; /* Blanco */
+    margin-top: 2rem;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+footer nav ul li {
+    margin: 0;
+}
+
+footer nav ul li a {
+    color: #FFFFFF; /* Blanco */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer nav ul li a:hover {
+    color: #B7A7A9; /* Gris intermedio */
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+
+/* Box interactivo */
+.offer-box {
+    text-align: center;
+    padding: 1rem;
+    background-color: #91766E; /* Marrón claro */
+    margin: 1.5rem auto;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #FFFFFF; /* Texto en blanco */
+}
+
+.offer-box h2 {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 0;
+    transition: color 0.3s;
+}
+
+.offer-box h2:hover {
+    color: #F6ECE3; /* Fondo suave */
+}
+
+.offer-box .content {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.offer-box .content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.offer-box .content ul li {
+    background: #F6ECE3; /* Fondo claro para los ítems */
+    color: #000000; /* Texto negro */
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.offer-box .content button {
+    background-color: #B7A7A9; /* Gris intermedio */
+    border: none;
+    padding: 0.8rem 1.2rem;
+    color: #FFFFFF; /* Texto blanco */
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: block;
+}
+
+.offer-box .content button:hover {
+    background-color: #91766E; /* Marrón claro */
+}
+
+.offer-box .show-less {
+    margin-top: 1rem;
+    color: #F6ECE3; /* Texto suave */
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* Mostrar contenido */
+.offer-box .content.hidden {
+    display: none;
+}
+
+/* Mostrar/Ocultar contenido */
+.hidden {
+    display: none;
+}
+
+/* Animación del carrusel */
+@keyframes slide {
+    0%, 33% { transform: translateX(0); }
+    34%, 66% { transform: translateX(-100%); }
+    67%, 100% { transform: translateX(-200%); }
+}
+
+/* Media Queries para Responsiveness */
+@media (min-width: 768px) {
+    nav ul {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    header {
+        padding: 4rem 2rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.5rem;
+    }
+
+    main {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1024px) {
+    nav ul {
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    main div {
+        max-width: 30%;
+    }
+}

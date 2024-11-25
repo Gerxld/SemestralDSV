@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Gestiona tú evento</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="conocenos.html">Conócenos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contáctanos</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Bienvenidos a Gestiona tus Eventos</h1>
+        <p>Facilitamos la organización y administración de tus eventos.</p>
+    </header>
+     <!-- Carrusel -->
+     <div class="carousel">
+        <div class="carousel-images">
+            <!-- Aquí puedes reemplazar con tus imágenes -->
+            <img src="Images/Image2.jpg" alt="Evento 1">
+            <img src="Images/Image3.png" alt="Evento 2">
+            <img src="Images/Image1.jpg" alt="Evento 3">
+        </div>
+    </div>
+
+    <!-- Box interactivo -->
+    <section class="offer-box">
+        <h2 id="offer-heading">¿Qué ofrecemos?</h2>
+        <div class="content hidden" id="offer-content">
+            <ul>
+                <li>Gestión de eventos</li>
+                <li>Administración de asistentes</li>
+                <li>Control de pagos</li>
+                <li>Organización de recursos</li>
+            </ul>
+            <button onclick="location.href='conocenos.html'">Ir a Conócenos</button>
+            <p class="show-less" id="show-less">Mostrar menos</p>
+        </div>
+    </section>
+
+
+    <section class="intro-services">
+        <h2>Nuestros servicios</h2>
+        <p>
+            Explora nuestras herramientas diseñadas para ayudarte a <strong>crear eventos</strong> desde cero 
+            y <strong>gestionar tus eventos</strong> de manera eficiente. Simplifica la organización 
+            de conferencias, talleres o reuniones empresariales con solo un clic.
+        </p>
+        <div class="service-buttons">
+            <button onclick="location.href='CrearEvento.html'">Crear evento</button>
+            <button onclick="location.href='GestionarEvento.html'">Gestionar evento</button>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conocenos.html">Conócenos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Gestiona tus Eventos. Todos los derechos reservados.</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // Obtén elementos
+        const offerHeading = document.getElementById('offer-heading');
+        const offerContent = document.getElementById('offer-content');
+        const showLess = document.getElementById('show-less');
+    
+        // Evento para mostrar contenido
+        offerHeading.addEventListener('click', () => {
+            offerContent.classList.toggle('hidden'); // Alterna la visibilidad
+        });
+    
+        // Evento para ocultar contenido
+        showLess.addEventListener('click', (event) => {
+            event.stopPropagation(); // Evita que el clic cierre el box directamente
+            offerContent.classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
