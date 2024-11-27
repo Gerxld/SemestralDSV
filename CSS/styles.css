@@ -595,3 +595,53 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
+
+
+/* Estilo para el contenedor */
+.container-servicios {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Estilo para las tarjetas */
+.card-servicio {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.card-servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-servicio img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.card-servicio h3 {
+    margin: 10px 0;
+    color: #000000;
+}
+
+.card-servicio p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Estilo para el pie de página */
+.footer-servicios {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+}
