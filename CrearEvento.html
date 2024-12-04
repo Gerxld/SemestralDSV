@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Evento | Gestión de Eventos</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="conocenos.html">Conócenos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contáctanos</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Creación de Eventos</h1>
+        <p>Crea y organiza eventos de manera eficiente con nuestra plataforma integral.</p>
+    </header>
+    <main>
+        <div class="intro-services">
+            <h2>Crear un Nuevo Evento</h2>
+            <form action="#" method="POST" class="event-form">
+                <div>
+                    <label for="event-name">Nombre del Evento:</label>
+                    <input 
+                        type="text" 
+                        id="event-name" 
+                        name="event-name" 
+                        placeholder="Ingresa el nombre del evento" 
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="event-date">Fecha del Evento:</label>
+                    <input type="date" id="event-date" name="event-date" required>
+
+                    <label for="event-time">Hora del Evento:</label>
+                    <input type="time" id="event-time" name="event-time" required>
+                </div>
+                <div>
+                    <label for="event-location">Ubicación:</label>
+                    <input 
+                        type="text" 
+                        id="event-location" 
+                        name="event-location" 
+                        placeholder="Escribe la dirección o lugar del evento" 
+                        required>
+                </div>
+                <div>
+                    <label for="event-description">Descripción del Evento:</label>
+                    <textarea 
+                        id="event-description" 
+                        name="event-description" 
+                        placeholder="Describe el propósito del evento" 
+                        rows="4" 
+                        required></textarea>
+                </div>
+                <div>
+                    <label for="event-category">Categoría:</label>
+                    <select id="event-category" name="event-category" required>
+                        <option value="">Selecciona una categoría</option>
+                        <option value="conferencia">Conferencia</option>
+                        <option value="taller">Taller</option>
+                        <option value="concierto">Concierto</option>
+                        <option value="reunion">Reunión Empresarial</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="event-capacity">Capacidad Máxima:</label>
+                    <input 
+                        type="number" 
+                        id="event-capacity" 
+                        name="event-capacity" 
+                        placeholder="Ejemplo: 100" 
+                        min="1" 
+                        required>
+                </div>
+
+                <div class="service-buttons">
+                    <button type="submit">Crear Evento</button>
+                    <button type="reset">Limpiar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conocenos.html">Conócenos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Gestiona tus Eventos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
